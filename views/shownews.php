@@ -14,5 +14,6 @@ foreach ($news as $article): ?>
     </div>
 <?php
 endforeach; ?>
+<a href="../views/addnews.php">Добавить новость</a>
 </body>
 </html>
