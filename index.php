@@ -1,3 +1,3 @@
 <?php
-header('Location:' . 'controllers\news.php');
+header('Location:' . './controllers/news.php');
 ?>

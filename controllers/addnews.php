@@ -1,6 +1,6 @@
 <?php
 
-require_once '../models/news.php';
+require_once __DIR__ . '../models/news.php';
 
 $title = $_POST['title'];
 $text = $_POST['text'];

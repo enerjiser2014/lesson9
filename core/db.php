@@ -1,6 +1,6 @@
 <?php
 
-require_once '../site_config.php';
+require_once __DIR__ . '../site_config.php';
 
 function dbConnect()
 {
@@ -25,7 +25,7 @@ function dbFindNewsByQuery($sql)
     return dbFindAllByQuery($sql)[0];
 }
 
-function addNews($sql)
+function dbAddNews($sql)
 {
     dbConnect();
     return mysql_query($sql);

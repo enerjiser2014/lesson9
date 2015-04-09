@@ -1,6 +1,6 @@
 <?php
 
-require_once '../core/db.php';
+require_once __DIR__ . '../core/db.php';
 
 function findAllNews()
 {
@@ -24,7 +24,7 @@ function addSiteNews($title, $text, $date)
     $sql = <<<EOD
 INSERT INTO news (text, title, date) VALUES ('{$text}', '{$title}', '{$date}')
 EOD;
-    $ret = addNews($sql);
+    $ret = dbAddNews($sql);
     return $sql;
 }
 

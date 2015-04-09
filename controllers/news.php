@@ -1,11 +1,7 @@
 <?php
 
-require_once '../models/news.php';
+require_once __DIR__ . '../models/news.php';
 $news = findAllNews();
-require_once '../views/shownews.php';
-
-$d1 = strtotime('today');
-echo '<br>';
-echo $d1;
+require_once __DIR__ . '../views/shownews.php';
 
 ?>
